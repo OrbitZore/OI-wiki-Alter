@@ -478,8 +478,9 @@ nav:
     - RMQ: topic/rmq.md
     - 并查集应用: topic/dsu-app.md
     - 括号序列: topic/bracket.md
-  - 关于 Hulu:
-    -  关于 Hulu: intro/hulu.md
+  - 各平台题解:
+    - Codeforces: sol/codeforces.md
+    - Nowcoder: sol/nowcoder.md
 
 # Theme
 theme:
