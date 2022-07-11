@@ -6,14 +6,13 @@ site_url: https://oi-wiki.org
 strict: false
 
 # Repository
-repo_name: 'OI-wiki/OI-wiki'
-repo_url: 'https://github.com/OI-wiki/OI-wiki'
-edit_uri: 'https://oi-wiki.org/edit-landing/?ref='
+repo_name: 'OrbitZore/OI-wiki-Alter'
+repo_url: 'https://github.com/OrbitZore/OI-wiki-Alter'
+edit_uri: 'https://wiki.z3475.work/edit-landing/?ref='
 
 # Copyright
-copyright: 'Copyright &copy; 2016 - 2022 OI Wiki Team'
+copyright: 'Copyright &copy; 2016 - 2022 OI Wiki Team & z3475 '
 google_analytics:
-  - 'UA-124485594-1'
   - 'auto'
 
 # Contents
