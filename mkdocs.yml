@@ -12,8 +12,6 @@ edit_uri: 'https://wiki.z3475.work/edit-landing/?ref='
 
 # Copyright
 copyright: 'Copyright &copy; 2016 - 2022 OI Wiki Team & z3475 '
-google_analytics:
-  - 'auto'
 
 # Contents
 nav:
