@@ -1,8 +1,8 @@
 # Project Information
-site_name: OI Wiki
-site_description: OI Wiki 是一个编程竞赛知识整合站点，提供有趣又实用的编程竞赛知识以及其他有帮助的内容，帮助广大编程竞赛爱好者更快更深入地学习编程竞赛
-site_author: OI Wiki Team
-site_url: https://oi-wiki.org
+site_name: OI Wiki-Alter
+site_description: OI Wiki-Alter 是一个编程竞赛知识整合站点，提供有趣又实用的编程竞赛知识以及其他有帮助的内容，帮助广大编程竞赛爱好者更快更深入地学习编程竞赛
+site_author: OI Wiki Team with z3475's Team
+site_url: https://wiki.z3475.work
 strict: false
 
 # Repository
