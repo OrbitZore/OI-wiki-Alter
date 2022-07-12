@@ -56,7 +56,7 @@ rm -rf "$TEMP_DIR"
 #TEMP_DIR="$(mktemp -d -t "download-gittalk-XXXXXXXX")"
 #echo "Downloading Gitalk to $TEMP_DIR"
 #echo "Repo: $TEMP_DIR"
-#GITALK_REPO=${GITALK_REPO:-"https://github.com/OrbitZore/gitalk"}
+#GITALK_REPO=${GITALK_REPO:-"https://github.com/Team-MEOW-Let-s-Do-Bad-Things-Together/gitalk"}
 #GITALK_BRANCH="mv1.0"
 #GITALK_REQUIRED_FILES=(
 #	"gitalk-component.js"

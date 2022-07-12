@@ -2,7 +2,7 @@
 
 set -e
 
-REPO="OrbitZore/OI-wiki-Alter"
+REPO="Team-MEOW-Let-s-Do-Bad-Things-Together/OI-wiki-Alter"
 DIRNAME="$(dirname -- "${BASH_SOURCE[0]}")"
 
 wget "https://raw.githubusercontent.com/$REPO/authors-cache/authors.json" -O "authors.json"

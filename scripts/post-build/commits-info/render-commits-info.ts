@@ -6,7 +6,7 @@ import cheerio from "cheerio";
 
 import type { AuthorsCache } from "./authors-cache.js";
 
-const GITHUB_REPO = "OrbitZore/OI-wiki-Alter";
+const GITHUB_REPO = "Team-MEOW-Let-s-Do-Bad-Things-Together/OI-wiki-Alter";
 const AUTHORS_FILE = "authors.json";
 const AUTHORS_EXCLUDED = ["24OI-Bot", "OI-wiki"];
 

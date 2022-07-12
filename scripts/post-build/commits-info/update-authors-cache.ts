@@ -3,7 +3,7 @@ import { Octokit } from "octokit";
 
 import { AuthorsCache, AuthorUserMap } from "./authors-cache.js";
 
-const GITHUB_REPO = "OrbitZore/OI-wiki-Alter";
+const GITHUB_REPO = "Team-MEOW-Let-s-Do-Bad-Things-Together/OI-wiki-Alter";
 const AUTHORS_FILE = "authors.json";
 
 // Increase this value carefully since it should cause API token limit exceeded
