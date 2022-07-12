@@ -480,7 +480,10 @@ nav:
     - 括号序列: topic/bracket.md
   - 各平台题解:
     - Codeforces: sol/codeforces.md
-    - Nowcoder: sol/nowcoder.md
+    - Nowcoder:
+      - 牛客: sol/nowcoder.md
+      - 牛客字符串专题:
+        - KMP: sol/nowcoder/string/KMP.md
 
 # Theme
 theme:
