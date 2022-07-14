@@ -14,6 +14,8 @@ author: Marcythm, Ir1d, Ycrpro, Xeonacid, konnyakuxzy, CJSoft, HeRaNO, ethan-enh
 
 我们观察到线段树上的信息一般满足这样的性质，一些数域上的加法与乘法自然，考虑二元的 $\max(x,y)$ 运算，此时幺元为 $-\infty$ 也满足这样的性质（一般左右幺元相同时简称为幺元）。
 
+[线段树维护矩阵](../sol/codeforces/ECR131.md)
+
 ## 线段树
 
 ### 线段树的基本结构与建树

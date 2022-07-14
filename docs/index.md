@@ -2,11 +2,11 @@ disqus:
 pagetime:
 title: OI Wiki
 
-# 欢迎来到 **OI Wiki z3475 mod edition**！[![GitHub watchers](https://img.shields.io/github/watchers/OI-wiki/OI-wiki.svg?style=social&label=Watch)](https://github.com/OI-wiki/OI-wiki)  [![GitHub stars](https://img.shields.io/github/stars/OI-wiki/OI-wiki.svg?style=social&label=Stars)](https://github.com/OI-wiki/OI-wiki)
+# 欢迎来到 **OI Wiki z3475 mod edition**！[![GitHub watchers](https://img.shields.io/github/watchers/Team-MEOW-Let-s-Do-Bad-Things-Together/OI-wiki-Alter.svg?style=social&label=Watch)](https://github.com/Team-MEOW-Let-s-Do-Bad-Things-Together/OI-wiki-Alter)  [![GitHub stars](https://img.shields.io/github/stars/Team-MEOW-Let-s-Do-Bad-Things-Together/OI-wiki-Alter.svg?style=social&label=Stars)](https://github.com/Team-MEOW-Let-s-Do-Bad-Things-Together/OI-wiki-Alter)
 
 本项目修改自`OI-Wiki`，增加了一些个人的经验。
 
-[![Word Art](images/wordArt.webp)](https://github.com/OI-wiki/OI-wiki)
+[![Word Art](images/wordArt.webp)](https://github.com/Team-MEOW-Let-s-Do-Bad-Things-Together/OI-wiki-Alter)
 
 **OI**（Olympiad in Informatics，信息学奥林匹克竞赛）在中国起源于 1984 年，是五大高中学科竞赛之一。
 
