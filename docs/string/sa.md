@@ -94,54 +94,79 @@
 
 ??? note "参考代码"
     ```cpp
-    #include <algorithm>
-    #include <cstdio>
-    #include <cstring>
-    #include <iostream>
-    
+    #include <bits/stdc++.h>
     using namespace std;
-    
-    const int N = 1000010;
-    
+
+    const int N = 2e5 + 100;
     char s[N];
-    int n, sa[N], rk[N << 1], oldrk[N << 1], id[N], cnt[N];
-    
-    int main() {
-      int i, m, p, w;
-    
-      scanf("%s", s + 1);
-      n = strlen(s + 1);
-      m = max(n, 300);
-      for (i = 1; i <= n; ++i) ++cnt[rk[i] = s[i]];
-      for (i = 1; i <= m; ++i) cnt[i] += cnt[i - 1];
-      for (i = n; i >= 1; --i) sa[cnt[rk[i]]--] = i;
-    
-      for (w = 1; w < n; w <<= 1) {
-        memset(cnt, 0, sizeof(cnt));
-        for (i = 1; i <= n; ++i) id[i] = sa[i];
-        for (i = 1; i <= n; ++i) ++cnt[rk[id[i] + w]];
-        for (i = 1; i <= m; ++i) cnt[i] += cnt[i - 1];
-        for (i = n; i >= 1; --i) sa[cnt[rk[id[i] + w]]--] = id[i];
-        memset(cnt, 0, sizeof(cnt));
-        for (i = 1; i <= n; ++i) id[i] = sa[i];
-        for (i = 1; i <= n; ++i) ++cnt[rk[id[i]]];
-        for (i = 1; i <= m; ++i) cnt[i] += cnt[i - 1];
-        for (i = n; i >= 1; --i) sa[cnt[rk[id[i]]]--] = id[i];
-        memcpy(oldrk, rk, sizeof(rk));
-        for (p = 0, i = 1; i <= n; ++i) {
-          if (oldrk[sa[i]] == oldrk[sa[i - 1]] &&
-              oldrk[sa[i] + w] == oldrk[sa[i - 1] + w]) {
-            rk[sa[i]] = p;
-          } else {
-            rk[sa[i]] = ++p;
-          }
+    int n, m;
+    int sa[N], height[N],€ rk[N], x[N], y[N], c[N];
+    void getSa()
+    {
+        for (int i = 1; i <= n; i++)
+            c[x[i] = s[i]]++;
+        for (int i = 2; i <= n; i++)
+            c[i] += c[i - 1];
+        for (int i = n; i >= 1; i--)
+            sa[c[x[i]]--] = i;
+
+        int num = 0;
+        for (int k = 1; k <= n; k >>= 1)
+        {
+            for (int i = n - k + 1; i <= n; i++)
+                y[++num] = i;
+            for (int i = 1; i <= n; i++)
+                if (sa[i] > k)
+                    y[++num] = sa[i] - k;
+
+            for (int i = 1; i <= m; i++)
+                c[i] = 0;
+            for (int i = 1; i <= n; i++)
+                c[x[i]]++;
+            for (int i = 2; i <= n; i++)
+                c[i] += c[i - 1];
+
+            for (int i = n; i >= 1; i--)
+                sa[c[x[y[i]]]--] = y[i], y[i] = 0;
+            swap(x, y);
+            num = 0;
+            x[sa[1]] = ++num;
+            for (int i = 2; i <= n; i++)
+                x[sa[i]] = (y[sa[i]] == y[sa[i - 1] && y[sa[i] + k]] == y[sa[i - 1] + k]) ? num : ++num;
+            if (num == n)
+                break;
+            m = num;
         }
-      }
-    
-      for (i = 1; i <= n; ++i) printf("%d ", sa[i]);
-    
-      return 0;
     }
+
+    void getHeight()
+    {
+        for (int i = 1; i <= n; i++)
+            rk[sa[i]] = i;
+        for (int i = 1, k = 0; i <= n; i++)
+        {
+            if (rk[i] == 1)
+                continue;
+            if (k)
+                k--;
+            int j = sa[rk[i] - 1];
+            while (i + k <= n && j + k <= n && s[i + k] == s[j + k])
+                k++;
+            height[rk[i]] = k;
+        }
+    }
+    int main()
+    {
+        cin >> s + 1;
+        n = strlen(s + 1), m = 128;
+        getSa();
+        getHeight();
+        for (int i = 1; i <= n; i++)
+            cout << sa[i] << endl;
+        for (int i = 1; i <= n; i++)
+            cout << height[i] << endl;
+    }
+
     ```
 
 ### 一些常数优化
@@ -169,7 +194,7 @@ for (i = 1; i <= n; ++i) {
 
 每次对 $rk$ 进行去重之后，我们都计算了一个 $p$，这个 $p$ 即是 $rk$ 的值域，将值域改成它即可。
 
-#### 将 rk\[id[i]] 存下来，减少不连续内存访问
+#### 将 rk[id[i]] 存下来，减少不连续内存访问
 
 这个优化在数据范围较大时效果非常明显。
 
@@ -284,6 +309,9 @@ for (i = 1; i <= n; ++i) {
 两个字符串 $S$ 和 $T$ 的 LCP 就是最大的 $x$($x\le \min(|S|, |T|)$) 使得 $S_i=T_i\ (\forall\ 1\le i\le x)$。
 
 下文中以 $lcp(i,j)$ 表示后缀 $i$ 和后缀 $j$ 的最长公共前缀（的长度）。
+**LCP性质：**
+$LCP(sa[i],sa[j])=min(LCP(sa[i],sa[k]),LCP(sa[k],sa[j]))\ (i \leq k\leq j)$
+应用于height数组的[两子串最长公共前缀](###\ 两子串最长公共前缀)等。
 
 ### height 数组的定义
 
