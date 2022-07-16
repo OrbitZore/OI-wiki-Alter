@@ -100,7 +100,7 @@
     const int N = 2e5 + 100;
     char s[N];
     int n, m;
-    int sa[N], height[N],€ rk[N], x[N], y[N], c[N];
+    int sa[N], height[N], rk[N], x[N], y[N], c[N];
     void getSa()
     {
         for (int i = 1; i <= n; i++)
@@ -311,7 +311,7 @@ for (i = 1; i <= n; ++i) {
 下文中以 $lcp(i,j)$ 表示后缀 $i$ 和后缀 $j$ 的最长公共前缀（的长度）。
 **LCP性质：**
 $LCP(sa[i],sa[j])=min(LCP(sa[i],sa[k]),LCP(sa[k],sa[j]))\ (i \leq k\leq j)$
-应用于height数组的[两子串最长公共前缀](###\ 两子串最长公共前缀)等。
+应用于height数组的[两子串最长公共前缀](#_12)等。
 
 ### height 数组的定义
 
