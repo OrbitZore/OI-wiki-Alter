@@ -387,6 +387,17 @@ nav:
       - 牛客: sol/nowcoder.md
       - 牛客字符串专题:
         - KMP: sol/nowcoder/string/KMP.md
+      - 2022牛客多校:
+        - 多校训练营1: sol/nowcoder/schools2022/s1.md
+        - 多校训练营2: sol/nowcoder/schools2022/s2.md
+        - 多校训练营3: sol/nowcoder/schools2022/s3.md
+        - 多校训练营4: sol/nowcoder/schools2022/s4.md
+        - 多校训练营5: sol/nowcoder/schools2022/s5.md
+        - 多校训练营6: sol/nowcoder/schools2022/s6.md
+        - 多校训练营7: sol/nowcoder/schools2022/s7.md
+        - 多校训练营8: sol/nowcoder/schools2022/s8.md
+        - 多校训练营9: sol/nowcoder/schools2022/s9.md
+        - 多校训练营10: sol/nowcoder/schools2022/s10.md
 
 # Theme
 theme:
