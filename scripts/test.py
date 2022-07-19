@@ -23,9 +23,9 @@ for line in lines:
     ansdata = name+'.ans'
     outdata = name+'.out'
     skiptest = name+'.skip_test'
-    indata = indata.replace('code', 'examples')
-    outdata = outdata.replace('code', 'examples')
-    ansdata = ansdata.replace('code', 'examples')
+    indata = indata.replace('code', 'examples', 1)
+    outdata = outdata.replace('code', 'examples', 1)
+    ansdata = ansdata.replace('code', 'examples', 1)
     # 判断测试是否要执行
     if os.path.exists(skiptest):
         print(cpp + ' test skipped')
