@@ -105,7 +105,7 @@
     {
         for (int i = 1; i <= n; i++)
             c[x[i] = s[i]]++;
-        for (int i = 2; i <= n; i++)
+        for (int i = 2; i <= m; i++)
             c[i] += c[i - 1];
         for (int i = n; i >= 1; i--)
             sa[c[x[i]]--] = i;
@@ -123,7 +123,7 @@
                 c[i] = 0;
             for (int i = 1; i <= n; i++)
                 c[x[i]]++;
-            for (int i = 2; i <= n; i++)
+            for (int i = 2; i <= m; i++)
                 c[i] += c[i - 1];
 
             for (int i = n; i >= 1; i--)
