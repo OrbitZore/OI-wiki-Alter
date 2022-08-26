@@ -12,10 +12,6 @@
 
 ##### 代码
 
-??? note "参考代码"
-    ```cpp
-    --8<-- "docs/sol/code/nowcoder/"
-    ```
 
 ### K:[Killer Sajin's Matrix](https://ac.nowcoder.com/acm/contest/38727/K)
 
@@ -30,8 +26,3 @@
 
 
 ##### 代码
-
-??? note "参考代码"
-    ```cpp
-    --8<-- "docs/sol/code/nowcoder/"
-    ```
