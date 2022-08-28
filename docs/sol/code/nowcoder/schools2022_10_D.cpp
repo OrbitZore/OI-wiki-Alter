@@ -97,10 +97,11 @@ LL make(int len)
         int ll = i - lcs(i, i + len) + 1;
         int rr = i + len + lcp(i, i + len) - 1;
         if (rr - ll + 1 < 2 * len)continue;
-        int num = rr - ll + 1 - (len - 1);
-        int t = num / len;
-        res += (num % len) * (LL)t * len;
-        res += (LL)t * (t - 1) / 2 * len * len;
+        int num = rr - ll + 1;
+        int t = num / len; // 最大循环节数量
+        int cnt = num % len + 1; // 拥有最大循环节的个数
+        res += (LL)t * (t - 1) / 2 * cnt * len;
+        res += (LL)(t-1)*(t-2)/2*(len - cnt)*len;
         i = rr - len + 1;
     }
     return res;
