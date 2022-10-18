@@ -386,11 +386,11 @@ nav:
     - 并查集应用: topic/dsu-app.md
     - 括号序列: topic/bracket.md
   - 各平台题解:
+    - VP:
+      - 2022ICPCBrazil: sol/VP/2022Brazil.md
     - Codeforces: 
-      - Codeforces: sol/codeforces.md
       - Educational Codeforces Round 131 (Rated for Div. 2): sol/codeforces/ECR131.md
     - Nowcoder:
-      - 牛客: sol/nowcoder.md
       - 牛客字符串专题:
         - KMP: sol/nowcoder/string/KMP.md
       - 2022牛客多校:
